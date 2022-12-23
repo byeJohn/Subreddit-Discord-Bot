@@ -1,2 +1,8 @@
 # Subreddit-Discord-Bot
-Discord Bot made specifically for r/buildapcsales. Posts the latest reddit post to a desired discord channel
+This Discord bot is intended for personal use.
+
+# Steps for setup:
+1. Discord Developer
+2. Reddit API
+3. Desired subreddit (if not using for r/buildapcsales)
+4. Desired Discord channel_id
