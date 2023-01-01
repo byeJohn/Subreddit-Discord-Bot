@@ -14,7 +14,7 @@ interval = 1
     sent_posts = []
     
     while True:
-        submission = reddit.subreddit(subreddit).new(limit=5) 
+        submission = reddit.subreddit('subreddit').new(limit=5) 
         post = next(submission) 
         title = post.title 
         if title not in sent_posts: 
