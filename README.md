@@ -7,3 +7,5 @@ Current Issue: Posting every minute instead of when a new post is posted.
 2. Reddit API
 3. Desired subreddit (if not using for r/buildapcsales)
 4. Desired Discord channel_id
+
+Self-Hosting:
