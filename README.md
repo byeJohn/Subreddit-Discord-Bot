@@ -9,3 +9,4 @@ Current Issue: Posting every minute instead of when a new post is posted.
 4. Desired Discord channel_id
 
 Self-Hosting:
+Create an account on https://replit.com/
