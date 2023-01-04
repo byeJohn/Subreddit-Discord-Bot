@@ -31,7 +31,7 @@ async def send_latest_post(subreddit, channel_id):
 
             channel = client.get_channel(channel_id) # discord channel
             await channel.send(embed=embed)
-        time.sleep(interval * 60) # pauses the program for the desired interval(minutes)
+        await asyncio.sleep(interval * 60) # pauses the program for the desired interval(minutes)
 
 
 @client.event
