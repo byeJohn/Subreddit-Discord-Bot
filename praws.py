@@ -5,8 +5,13 @@ import praw
 import time
 
 client = discord.Client(intents=discord.Intents.default())
+
 TOKEN = ''
+
 reddit = praw.Reddit(client_id='', cilent_secret='', user_agent='')
+
+subreddits = 'buildapcsales+frugalmalefashion'
+channelid = ''
 
 # sets the amount of minutes per check
 interval = 1
@@ -38,12 +43,12 @@ async def send_latest_post(subreddit, channel_id):
 async def on_ready():
     try:
         # runs this function once when the bot starts up
-        await send_latest_post('buildapcsales', 1054872742089982004)
+        await send_latest_post(subreddits, channelid)
 
         # runs the function at the desired interval
         while True:
             time.sleep(interval * 60) # Pause the program for the desired interval in minutes
-            await send_latest_post('buildapcsales', 1054872742089982004)
+            await send_latest_post(subreddits, channelid)
     except Exception as e:
         print(f'An exception occurred: {e}')
   
