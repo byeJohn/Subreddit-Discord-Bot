@@ -5,7 +5,7 @@ import praw
 import time
 
 client = discord.Client(intents=discord.Intents.default())
-
+TOKEN = ''
 reddit = praw.Reddit(client_id='', cilent_secret='', user_agent='')
 
 # sets the amount of minutes per check
@@ -48,4 +48,4 @@ async def on_ready():
         print(f'An exception occurred: {e}')
   
 
-client.run('BOT_TOKEN_HERE')
+client.run(TOKEN)
